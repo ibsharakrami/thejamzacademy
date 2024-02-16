@@ -7,7 +7,8 @@ export default function About() {
 
       <h1 className="bg-black text-center text-lg">About us</h1>
 
-
+      <h1 className="bg-black text-center text-lg">About us</h1>
+      <h1 className="bg-black text-center text-lg">About us</h1>
 
     </main>
   );
