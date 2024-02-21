@@ -17,9 +17,9 @@ export default function Home() {
     <div className="w-full item-center h-1/2 flex items-center justify-center">
       <Image
       src={homepage }
-      width={400}
-      height={400}
-     className=" object-cover w-full h-full md:h-[32rem] md:object-contain rounded-full"
+      width={500}
+      height={500}
+     className=" object-cover w-full h-full md:h-[40rem] md:object-contain rounded-lg md:rounded-full"
 
       />
     </div>
