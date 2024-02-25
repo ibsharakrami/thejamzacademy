@@ -2,7 +2,10 @@
 const nextConfig = {
   images: {
     domains: ['res.cloudinary.com'],
+    disableStaticImages: true
 },
 };
+
+
 
 export default nextConfig;

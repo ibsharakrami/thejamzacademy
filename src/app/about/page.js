@@ -1,28 +1,40 @@
 
+import Image from 'next/image'
+
 
 export default function About() {
   return (
-    <main className="h-screen  w-full rounded-md  items-center justify-center relative overflow-hidden mx-auto  md:py-0  md:flex ">
+    <main className=" h-full w-full rounded-md  container  relative overflow-hidden mx-auto  md:py-0  flex lg:flex-row flex-col   ">
 
 
-      <div className="  h-1/2 w-full md:h-full  items-center justify-center">
-      <h1 className="text-2xl md:text-7xl font-bold text-left bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 px-5 pt-12">
-      Unlock Quranic Wisdom with Us.
+      <div className="  w-full   items-center justify-center">
+        <h1 className="text-2xl md:text-7xl font-bold text-left bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 px-5 pt-12  md:px-16 md:mt-20 ">
+          "Unlock Quranic Wisdom with Us."
         </h1>
-          <h1 className="text-[10px]  md:text-[17px] font-bold text-left bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50  md:p-16  p-5">The Modern Jamz Academy stands as a distinguished online institution devoted to enriching lives through the profound exploration of the Quran and the Arabic language. With a diverse array of meticulously crafted courses, we invite you to embark on a transformative journey of knowledge, spirituality, and personal growth. Our academy is more than an educational hub; it's a nurturing space where qualified instructors guide students in a supportive and interactive environment. Join us at [Your Academy Name] to elevate your understanding of the Quran, master the Arabic language, and deepen your connection to the teachings of Islam. Add a personal touch to your About section by sharing success stories from students who have benefited from our courses, creating a sense of community and inspiration for potential learners.</h1>
+        <h1 className="text-[10px]  md:text-[17px] font-bold text-left bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50  md:px-16 md:pt-12  p-5">Welcome to Modern Jamz Academy - where Quranic wisdom meets personal growth. Join us for transformative courses, expert guidance, and a supportive community. Master Arabic, deepen your connection to Islam, and be inspired by success stories from our students. Elevate your learning journey with us.</h1>
       </div>
-      <div className="bg-green-500  h-1/2 w-full items-center justify-center flex gap-8">
-         <div className="bg-blue-300 h-60 w-60">
+      <div className=" w-full items-center justify-center flex gap-8 px-6">
 
-         </div>
-         <div className="bg-red-300 gap-4 flex-col ">
-         <div className="bg-yellow-300 h-60 w-60">
+        <div className='flex gap-5'  >
 
-</div>
-  <div className="bg-green-300 h-60 w-60 mt-10">
+          <div className='flex-1 flex items-center'>
 
-</div>
-</div>
+            <img className='h-44 w-full object-cover rounded-lg' src='/image/pexels-abdullah-ghatasheh-2608353.jpg' />
+
+          </div>
+          <div className='flex-1 flex flex-col gap-5'>
+
+            <img className='h-44 w-full object-cover rounded-lg md:block hidden ' src='/image/pexels-alena-darmel-8164428.jpg' />
+            <img className='h-44 w-full object-cover rounded-lg md:mt-0 mt-20   ' src='/image/pexels-alena-darmel-8164739.jpg' />
+
+          </div>
+
+
+        </div>
+
+
+
+
       </div>
 
 

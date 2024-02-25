@@ -1,7 +1,7 @@
 import Image from "next/image";
-import homepage from "../assets/image/landing.jpg"
+// import homepage from "@"
 
-import logo from "../assets/image/jamz.png";
+// import logo from "../assets/image/jamz.png";
 import { Spotlight } from "@/components/ui/Spotlight";
 import { cn } from "@/utils/cn";
 export default function Home() {
@@ -15,10 +15,10 @@ export default function Home() {
     <h1 className=" text-xl md:text-4xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50  md:p-16 mt-6 p-4">"Elevate your knowledge and spirituality at The Modern Jamz Academy—an online haven for Quranic education and Arabic language mastery"</h1>
     </div>
     <div className="w-full item-center h-1/2 flex items-center justify-center">
-      <Image
-      src={homepage }
-      width={500}
-      height={500}
+      <img
+      src={'/image/landing.jpg' }
+
+
      className=" object-cover w-full h-full md:h-[40rem] md:object-contain rounded-lg md:rounded-full"
 
       />
