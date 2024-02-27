@@ -14,33 +14,29 @@ export function Nav2() {
     <>
       <div className="w-full bg-transparent sticky top-0">
       <div className="container mx-auto px-4 h-full">
-        <div className="flex justify-between items-center h-full">
+        <div className="h-16  items-center flex justify-between ">
 
           {/* Burger Menu Button */}
-          <div className="md:hidden">
+          <img
+      src={'/image/jaa.png' }
+      className='h-30 w-40'
+
+      />
+          <div className="md:hidden flex items-center justify-center">
             <button
               onClick={toggleMenu}
               className="text-white focus:outline-none"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16m-7 6h7"
-                />
-              </svg>
+              <img
+      src={'/image/m.png' }
+      className='h-10 w-10'
+
+      />
             </button>
           </div>
 
           {/* Navigation Links */}
-          <ul className={`md:flex ${isMenuOpen ? 'block' : 'hidden'} md:block gap-x-6 text-white`}>
+          <ul className={`md:flex ${isMenuOpen ? 'block' : 'hidden'} hidden gap-x-6 text-white`}>
             <li>
               <Link href="/about">
                 <p>About Us</p>
@@ -59,21 +55,27 @@ export function Nav2() {
           </ul>
 
         </div>
+        <ul className={`md:flex ${isMenuOpen ? 'block' : 'hidden'} md:hidden gap-x-6 text-white`}>
+            <li>
+              <Link href="/about"  onClick={toggleMenu}>
+                <p>About Us</p>
+              </Link>
+            </li>
+            <li>
+              <Link href="/"  onClick={toggleMenu}>
+                <p>Services</p>
+              </Link>
+            </li>
+            <li>
+              <Link href="/contacts"  onClick={toggleMenu}>
+                <p>Contacts</p>
+              </Link>
+            </li>
+          </ul>
       </div>
     </div>
     </>
-    // <nav className="bg-red-300 fixed top-0 left-0 right-0 border-gray-200 dark:bg-gray-900">
-    //   <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-    //     <h1 className='text-white font-bold'>JAMZ ACADEMY</h1>
 
-    //     <div className="flex space-x-4">
-    //       <NavLink href="/">Home</NavLink>
-    //       <NavLink href="/about">About</NavLink>
-    //       <NavLink href="/courses">Courses</NavLink>
-    //       <NavLink href="/contact">Contact Us</NavLink>
-    //     </div>
-    //   </div>
-    // </nav>
   );
 }
 
@@ -83,7 +85,7 @@ function NavItem({ href, children, currentPath }) {
   return (
     <li>
       <Link href={href}>
-        <p className={`cursor-pointer ${isActive ? 'text-blue-500' : ''}`}>{children}</p>
+        <a className={`cursor-pointer ${isActive ? 'text-blue-500 underline' : 'text-white hover:underline'}`}>{children}</a>
       </Link>
     </li>
   );
