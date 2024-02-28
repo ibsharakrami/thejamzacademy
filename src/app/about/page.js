@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 export default function About() {
   return (
-    <main className=" h-full w-full rounded-md  container  relative overflow-hidden mx-auto  md:py-20  flex lg:flex-row flex-col   ">
+    <main className="h-screen  w-full rounded-md  container  relative overflow-hidden mx-auto  md:py-20  flex lg:flex-row flex-col   ">
         <Spotlight
       className="-top-40 left-0 md:left-60 md:-top-20"
       fill="white"

@@ -12,68 +12,73 @@ export function Nav2() {
 
   return (
     <>
-      <div className="w-full bg-transparent sticky top-0">
-      <div className="container mx-auto px-4 h-full">
-        <div className="h-16  items-center flex justify-between ">
+      <div className="w-full sticky top-0">
+        <div className="container mx-auto px-4 h-full">
+          <div className="h-16  items-center flex justify-between ">
 
-          {/* Burger Menu Button */}
-          <img
-      src={'/image/jaa.png' }
-      className='h-30 w-40'
+            {/* Burger Menu Button */}
+            <img
+              src={'/image/jaa.png'}
+              className='h-30 w-40'
 
-      />
-          <div className="md:hidden flex items-center justify-center">
-            <button
-              onClick={toggleMenu}
-              className="text-white focus:outline-none"
-            >
-              <img
-      src={'/image/m.png' }
-      className='h-10 w-10'
+            />
+            <div className="md:hidden flex items-center justify-center">
+              <button
+                onClick={toggleMenu}
+                className="text-white focus:outline-none"
+              >
+                <img
+                  src={'/image/m.png'}
+                  className='h-10 w-10'
 
-      />
-            </button>
+                />
+              </button>
+            </div>
+
+            {/* Navigation Links */}
+            <ul className={`md:flex ${isMenuOpen ? 'block' : 'hidden'} hidden gap-x-6 text-white`}>
+              <li>
+                <Link href="/about">
+                  <p>About Us</p>
+                </Link>
+              </li>
+              <li>
+                <Link href="/">
+                  <p>Services</p>
+                </Link>
+              </li>
+              <li>
+                <Link href="/contacts">
+                  <p>Contacts</p>
+                </Link>
+              </li>
+            </ul>
+
           </div>
-
-          {/* Navigation Links */}
-          <ul className={`md:flex ${isMenuOpen ? 'block' : 'hidden'} hidden gap-x-6 text-white`}>
-            <li>
-              <Link href="/about">
-                <p>About Us</p>
+          <ul className={`md:flex ${isMenuOpen ? 'block' : 'hidden'} md:hidden gap-x-6 text-white   flex flex-col justify-center items-center`}>
+          <li className='w-full h-16 flex items-center justify-center border-t-white border-b'>
+              <Link href="/" onClick={toggleMenu}>
+                <p className='text-white font-bold text-2xl '>Home</p>
               </Link>
             </li>
-            <li>
-              <Link href="/">
-                <p>Services</p>
+            <li className='w-full h-16 flex items-center justify-center border-t-white border-b'>
+              <Link href="/about" onClick={toggleMenu}>
+                <p className='text-white font-bold text-2xl '>About Us</p>
               </Link>
             </li>
-            <li>
-              <Link href="/contacts">
-                <p>Contacts</p>
+            <li className='w-full h-16 flex items-center justify-center border-t-white border-b'>
+              <Link href="/" onClick={toggleMenu}>
+                <p className='text-white font-bold text-2xl'>Cousres</p>
+              </Link>
+            </li>
+            <li className='w-full h-16 flex items-center justify-center border-t-white border-b'>
+              <Link href="/contacts" onClick={toggleMenu}>
+                <p className='text-white font-bold text-2xl'>Contacts</p>
               </Link>
             </li>
           </ul>
-
         </div>
-        <ul className={`md:flex ${isMenuOpen ? 'block' : 'hidden'} md:hidden gap-x-6 text-white`}>
-            <li>
-              <Link href="/about"  onClick={toggleMenu}>
-                <p>About Us</p>
-              </Link>
-            </li>
-            <li>
-              <Link href="/"  onClick={toggleMenu}>
-                <p>Services</p>
-              </Link>
-            </li>
-            <li>
-              <Link href="/contacts"  onClick={toggleMenu}>
-                <p>Contacts</p>
-              </Link>
-            </li>
-          </ul>
       </div>
-    </div>
     </>
 
   );
