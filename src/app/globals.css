@@ -36,5 +36,5 @@ body {
 .activeLink{
 
 
-  @apply  text-yellow-300;
+  @apply  text-logocolor-300 font-bold underline underline-offset-[12px] ;
 }

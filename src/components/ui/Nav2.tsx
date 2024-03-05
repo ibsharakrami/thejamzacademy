@@ -25,8 +25,8 @@ export function Nav2() {
 
   return (
     <>
-      <div className="w-full fixed left-0 right-0 top-0 z-50">
-        <div className="container mx-auto px-4 h-full">
+      <div className="max-w-7xl  bg-amber-500mx-auto fixed left-0 right-0 top-0 z-50 bg-amber-500">
+        <div className="container mx-auto px-4 h-full ">
           <div className="h-16  items-center flex justify-between ">
 
             {/* Burger Menu Button */}
@@ -49,7 +49,7 @@ export function Nav2() {
             </div>
 
             {/* Navigation Links */}
-            <ul className={`md:flex ${isMenuOpen ? 'block' : 'hidden'} hidden gap-x-6 text-white`}>
+            <ul className={`md:flex ${isMenuOpen ? 'block' : 'hidden'} hidden gap-x-6 text-white `}>
               <li>
                 <Link href="/" className={pathname == "/" ? "activeLink" : "none"}>
                   <p>Home</p>
@@ -73,7 +73,7 @@ export function Nav2() {
             </ul>
 
           </div>
-          <ul className={`md:flex ${isMenuOpen ? 'block' : 'hidden'} md:hidden gap-x-6 text-white   flex flex-col justify-center items-center`}>
+          <ul className={`md:flex ${isMenuOpen ? 'block' : 'hidden'} md:hidden gap-x-6 text-white   flex flex-col justify-center items-center `}>
             <li className='w-full h-16 flex items-center justify-center border-t-white border-b'>
               <Link href="/" onClick={toggleMenu}>
                 <p className='text-white font-bold text-2xl '>Home</p>
@@ -102,16 +102,5 @@ export function Nav2() {
   );
 }
 
-function NavItem({ href, children, currentPath }) {
-  const isActive = href === currentPath;
-
-  return (
-    <li>
-      <Link href={href}>
-        <a className={`cursor-pointer ${isActive ? 'text-blue-500 underline' : 'text-white hover:underline'}`}>{children}</a>
-      </Link>
-    </li>
-  );
-}
 
 

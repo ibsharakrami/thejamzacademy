@@ -13,7 +13,7 @@ export default function Home() {
       fill="white"
     />
     <div className="w-full flex flex-col " >
-    <h1 className=" text-xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50  md:p-16 mt-6 p-4">"Elevate your knowledge and spirituality at The Modern Jamz Academy—an online haven for Quranic education and Arabic language mastery"</h1>
+    <h1 className=" text-xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50  md:p-16 mt-6 p-4 ">"Elevate your knowledge and spirituality at The Modern Jamz Academy—an online haven for Quranic education and Arabic language mastery"</h1>
     <Button
         borderRadius="2rem"
         className=" border-[2px]  text-black bg-white font-bold   md:px-16  px-4 text-"

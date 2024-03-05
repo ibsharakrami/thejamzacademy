@@ -62,7 +62,13 @@ module.exports = {
 
       '2xl': '1536px',
       // => @media (min-width: 1536px) { ... }
+    },
+    colors: {
+     logocolor : {
+      300:'#F4DF98',
+     },
     }
+
   },
   plugins: [
     addVariablesForColors,
